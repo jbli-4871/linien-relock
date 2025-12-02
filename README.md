@@ -1,4 +1,4 @@
-LINIEN - REVISED
+LINIEN - RELOCK
 ======
 
 This is a copy of [linien v0.3.2](https://github.com/linien-org/linien/tree/v0.3.2) that's been modified to:
