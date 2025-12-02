@@ -718,7 +718,7 @@
           <item>
            <widget class="QLabel" name="label_relock_std">
             <property name="text">
-             <string>Maximum acceptable STD of error signal (relock)</string>
+             <string>Minimum STD of error signal before trying relock</string>
             </property>
            </widget>
           </item>
