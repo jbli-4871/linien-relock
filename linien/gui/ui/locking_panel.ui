@@ -723,7 +723,17 @@
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="STDthresholdbox_relock"/>
+           <widget class="QSpinBox" name="STDthresholdbox_relock">
+            <property name="minimum">
+             <number>0</number>
+            </property>
+            <property name="maximum">
+             <number>1000</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+           </widget>
           </item>
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_relock_threshold">

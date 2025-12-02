@@ -189,7 +189,7 @@ class Relock:
 
         # --- standard deviation check ---
         std_val = np.std(combined_error_signal)
-        self.parameters.relock_std_val = std_val
+        self.parameters.relock_std_val.value = std_val
         if std_val < self.parameters.watch_relock_threshold.value:
             reason = "Low signal standard deviation: " + str(std_val)
             return self._handle_failed_lock(reason)

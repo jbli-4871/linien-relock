@@ -7,7 +7,7 @@
 # ------------------------------
 # CONFIGURATION (EDIT THIS PATH)
 # ------------------------------
-VENV="/Users/jeffreyli/Desktop/Ni Lab/linienvenv"
+VENV="/Users/jeffreyli/Desktop/Ni Lab/oldlinienvenv"
 # ------------------------------
 
 echo "------------------------------------------------------------"
@@ -33,7 +33,7 @@ PYTHON="$VENV/bin/python"
 
 # 2. Install GUI-dependent packages
 echo "Installing GUI requirements..."
-$PYTHON -m pip install --no-deps -r requirements_gui
+"$PYTHON" -m pip install --no-deps -r requirements_gui
 if [ $? -ne 0 ]; then
     echo "ERROR: Failed to install GUI requirements."
     exit 1
@@ -42,7 +42,7 @@ echo ""
 
 # 3. Install GUI component
 echo "Installing Linien GUI..."
-$PYTHON setup_gui.py install
+"$PYTHON" setup_gui.py install
 if [ $? -ne 0 ]; then
     echo "ERROR: Failed to install setup_gui.py"
     exit 1
@@ -51,7 +51,7 @@ echo ""
 
 # 4. Install client component
 echo "Installing Linien client..."
-$PYTHON setup_client.py install
+"$PYTHON" setup_client.py install
 if [ $? -ne 0 ]; then
     echo "ERROR: Failed to install setup_client.py"
     exit 1

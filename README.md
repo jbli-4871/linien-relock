@@ -86,7 +86,7 @@ VENV=C:\Users\jeffreyli\Desktop\Ni Lab\linienvenv
 
 Modify this to the path for your virtual environment that you recorded in step 1 of the installation. With this complete, in your terminal run the following command:
 ```bash
-./install_linien.bat
+install_linien.bat
 ```
 
 ### 3. Installing linien-relock on your Red Pitaya:
@@ -129,7 +129,7 @@ On **Windows**, run the following command in a Command Prompt:
 ```bash
 ssh-keygen
 ```
-This will generate two files. Take note of the one with extension "id_rsa.pub"
+Hit Enter when prompted for inputs. This will generate two files. Take note of the one with extension "id_rsa.pub"
 ```makefile
 C:\Users\<you>\.ssh\id_rsa
 C:\Users\<you>\.ssh\id_rsa.pub

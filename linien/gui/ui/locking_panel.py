@@ -71,7 +71,7 @@ class LockingPanel(QtWidgets.QWidget, CustomWidget):
             if now - std_update_time < 0.5:  # only update every 0.5 s
                 return
             std_update_time = now
-            stdtext = "STD of error signal: " + str(params.gpio_p_out.value)
+            stdtext = "STD of error signal: " + str(params.relock_std_val.value)
             self.ids.std_display.setText(stdtext)
         
         params.relock_std_val.on_change(std_update)
