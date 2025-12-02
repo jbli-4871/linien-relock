@@ -1,0 +1,25 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting PyQt5
+  Using cached PyQt5-5.15.10-cp37-abi3-win_amd64.whl.metadata (2.2 kB)
+Requirement already satisfied: pyqtgraph in c:\users\simulation computer\appdata\roaming\python\python37\site-packages\pyqtgraph-0.13.7-py3.7.egg (0.13.7)
+Collecting PyQt5-sip<13,>=12.13 (from PyQt5)
+  Using cached PyQt5_sip-12.13.0.tar.gz (123 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting PyQt5-Qt5>=5.15.2 (from PyQt5)
+  Using cached PyQt5_Qt5-5.15.2-py3-none-win_amd64.whl.metadata (552 bytes)
+INFO: pip is looking at multiple versions of pyqtgraph to determine which version is compatible with other requirements. This could take a while.
+Collecting pyqtgraph
+  Using cached pyqtgraph-0.12.4-py3-none-any.whl.metadata (1.2 kB)
+Requirement already satisfied: numpy>=1.17.0 in c:\program files\python37\lib\site-packages (from pyqtgraph) (1.17.4)
+Using cached PyQt5-5.15.10-cp37-abi3-win_amd64.whl (6.8 MB)
+Using cached pyqtgraph-0.12.4-py3-none-any.whl (995 kB)
+Using cached PyQt5_Qt5-5.15.2-py3-none-win_amd64.whl (50.1 MB)
+Building wheels for collected packages: PyQt5-sip
+  Building wheel for PyQt5-sip (pyproject.toml): started
+  Building wheel for PyQt5-sip (pyproject.toml): finished with status 'error'
+Failed to build PyQt5-sip
