@@ -104,11 +104,18 @@ When prompted, enter "root" as the password for the Red Pitaya. You can then tes
 ```bash
 ssh root@rp-XXXXXX.local
 ```
-If this does not prompt you for a password, then you've successfully copied the SSH key. Exit the SSH window by running *exit* inside of it. You can now run the script to copy the new server files over. In a terminal inside the linien/server folder, run
+If this does not prompt you for a password, then you've successfully copied the SSH key. Exit the SSH window by running *exit* inside of it.
+
+You can now set up the script to copy the new server files over. Find the file in the linien-relock folder called *install_relock_server.sh* and locate line 16. It should say 
+```bash
+RP_IP="rp-XXXXXX.local"        # Red Pitaya IP address EDIT THIS
+```
+Modify this with your Red Pitaya host name. Then, in a terminal run the bash file with
 ```bash
 ./install_relock_server.sh
 ```
 
+This completes your installation of linien-relock on both your computer and the Red Pitaya
 
 Installation Instructions (Windows)
 ---------------
@@ -211,10 +218,17 @@ cat authorized_keys_tmp >> ~/.ssh/authorized_keys
 rm authorized_keys_tmp
 chmod 600 ~/.ssh/authorized_keys
 ```
-You can exit the Red Pitaya (run *exit* in the ssh window) and then run the install file in the Windows Command Prompt
+You can exit the Red Pitaya (run *exit* in the ssh window). You can now set up the script to copy the new server files over. Find the file in the linien-relock folder called *install_relock_server.bat* and locate line 12. It should say 
+```bash
+set RP_IP=rp-XXXXXX.local 
+```
+
+Modify this with your Red Pitaya host name. Then, in your Command Prompt run the install file by calling
 ```bash
 install_relock_server.bat
 ```
+
+This completes your installation of linien-relock on both your computer and the Red Pitaya
 
 Using linien-relock
 ---------------

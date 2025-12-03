@@ -7,12 +7,13 @@ echo ------------------------------------------------------------
 echo.
 
 :: ------------------------------
-:: CONFIGURATION (EDIT THESE)
+:: CONFIGURATION (EDIT THIS)
 :: ------------------------------
-set RP_IP=rp-f0c261.local
+set RP_IP=rp-XXXXXX.local 
+:: ------------------------------
+
 set LOCAL_DIR=.\linien\server
 set RP_TARGET_DIR=/usr/local/lib/python3.5/dist-packages/linien/server
-:: ------------------------------
 
 :: 1. Verify local directory
 if not exist "%LOCAL_DIR%" (

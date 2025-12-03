@@ -11,12 +11,13 @@ echo "------------------------------------------------------------"
 echo ""
 
 ### ------------------------------
-### CONFIGURATION (EDIT THESE)
+### CONFIGURATION (EDIT THIS)
 ### ------------------------------
-RP_IP="rp-XXXXXX.local"        # Red Pitaya IP address
-LOCAL_DIR="./linien/server"    # Local modified server directory
+RP_IP="rp-XXXXXX.local"        # Red Pitaya IP address EDIT THIS
+### ------------------------------
+
+LOCAL_DIR="./linien/server"    # Local modified server directory 
 RP_TARGET_DIR="/usr/local/lib/python3.5/dist-packages/linien/server"   # Remote install path
-### ------------------------------
 
 # 1. Verify that the local folder exists
 if [ ! -d "$LOCAL_DIR" ]; then
